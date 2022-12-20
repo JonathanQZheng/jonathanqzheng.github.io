@@ -32,7 +32,7 @@
               </p>
             </td>
             <td style="padding:2.5%;width:40%;max-width:40%">
-              <a href="images/JQZ.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/JQZ.jpg" class="hoverZoomLink"></a>
+              <a href="images/potrait_1.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/JQZ.jpg" class="hoverZoomLink"></a>
             </td>
           </tr>
         </tbody></table>
@@ -40,11 +40,51 @@
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research</heading>
+	      <p>
+                I'm interested in natural language processing and machine learning. My previous projects have focused on generalizability and robustness of NLP systems.
+              </p>
             </td>
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+	<tr onmouseout="stanceosaurus_stop()" onmouseover="stanceosaurus_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='stanceosaurus_image'>
+                  <img src='images/stanceosaurus_after.png' width="160"></div>
+                <img src='images/stanceosaurus_before.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function stanceosaurus_start() {
+                  document.getElementById('stanceosaurus_image').style.opacity = "1";
+                }
+
+                function stanceosaurus_stop() {
+                  document.getElementById('stanceosaurus_image').style.opacity = "0";
+                }
+                mira_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://openreview.net/forum?id=AmPeAFzU3a4">
+                <papertitle>Stanceosaurus: Classifying Stance Towards Multilingual Misinformation</papertitle>
+              </a>
+              <br>
+              <strong>Jonathan Zheng</strong>, 
+              <a href="https://abaheti95.github.io/">Ashutosh Baheti</a>, 
+	      <a href="https://scholar.google.com/citations?user=ImyLv44AAAAJ&hl=en">Tarek Naous</a>, 
+              <a href="https://cocoxu.github.io/">Wei Xu</a>,
+              <a href="http://aritter.github.io/">Alan Ritter</a>
+              <br>
+              <em>EMNLP</em>, 2022
+	      <a href="https://arxiv.org/abs/2210.15954">arXiv</a>
+              <p></p>
+              <p>
+                Stanceosaurus is a large corpus of English, Hindi, and Arabic tweets annotated with stance towards claims to combat misinformation online.
+              </p>
+            </td>
+          </tr>	
 					
                 
               </p>
