@@ -47,7 +47,7 @@
           </tr>
         </tbody></table>
         
-        <table style="width:96%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <!-- <table style="width:96%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
           <td style="padding:2px;width:100%;vertical-align:middle">
             <heading>Pre-prints</heading>
@@ -92,7 +92,7 @@
               </p>
             </td>
           </tr>	
-        </tbody></table>
+        </tbody></table> -->
 	      
 
         <table style="width:96%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -103,6 +103,43 @@
         </tr>
       </tbody></table>
 	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr onmouseout="branch_stop()" onmouseover="branch_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='branch_image'>
+                  <img src='images/branch_after.png' width="180"></div>
+                <img src='images/branch_before.png' width="180">
+              </div>
+              <script type="text/javascript">
+                function branch_start() {
+                  document.getElementById('branch_image').style.opacity = "1";
+                }
+
+                function branch_stop() {
+                  document.getElementById('branch_image').style.opacity = "0";
+                }
+                mira_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2503.09674">
+                <papertitle>Probabilistic Reasoning with LLMs for Privacy Risk Estimation</papertitle>
+              </a>
+              <br>
+              <strong>Jonathan Zheng</strong>,
+              <a href="https://www.sauvikdas.com/">Sauvik Das</a>,
+	      <a href="http://aritter.github.io/">Alan Ritter</a>,
+              <a href="https://cocoxu.github.io/">Wei Xu</a>
+	      <br>
+	      <em>NeurIPS 2025</em>
+	      <br>
+	      <a href="https://arxiv.org/abs/2503.09674">arXiv</a>
+              <p></p>
+              <p>
+                Privacy Risk Estimation is a new probablistic reasoning task that evaluates the capabilities of LLMs in using real world statistics to estimate the identification risk of user-generated documents containing privacy-sensitive information.
+              </p>
+            </td>
+          </tr>	
           <tr onmouseout="neobench_stop()" onmouseover="neobench_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
