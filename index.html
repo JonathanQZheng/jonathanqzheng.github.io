@@ -19,10 +19,10 @@
               <p style="text-align:center">
                 <name>Jonathan Zheng</name>
               </p>
-              <p>I am a fourth year PhD student at the Georgia Institute of Technology majoring in computer science. I have been working with <a href="https://cocoxu.github.io/">Wei Xu</a> and <a href="http://aritter.github.io/">Alan Ritter</a> since my second undergraduate year. 
+              <p>I am a fourth year PhD student at the Georgia Institute of Technology majoring in Machine Learning. I am co-advised by <a href="https://cocoxu.github.io/">Wei Xu</a> and <a href="http://aritter.github.io/">Alan Ritter</a>. 
               </p>
               <p>
-               	My research interests are in Natural Language Processing and Machine Learning, focusing on large language model (LLM) learning and generalizability. I am also interested in using LLMs for practical applications for social good, such as for misinformation detection and privacy risk detection.
+               	My research interests lie in Natural Language Processing and Machine Learning, with a focus on building language models that can learn, reason, and generalize beyond their static pretraining knowledge. I am particularly interested in how LLMs adapt to new information over time, including temporal knowledge drift, factual knowledge updating, and reasoning over evolving and causally connected information. I also explore the use of LLMs for practical applications with social impact, including misinformation detection and privacy risk estimation.
               <p style="text-align:center">
                 <a href="mailto:jonathanqzheng@gmail.com">Email</a> &nbsp/&nbsp
                 <a href="data/CV.pdf">CV</a> &nbsp/&nbsp
@@ -102,8 +102,48 @@
           </td>
         </tr>
       </tbody></table>
+	
 	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr onmouseout="branch_stop()" onmouseover="branch_start()">
+ <tr onmouseout="synapse_stop()" onmouseover="synapse_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='synapse_image'>
+                  <img src='images/synapse_after.png' width="180"></div>
+                <img src='images/synapse_before.png' width="180">
+              </div>
+              <script type="text/javascript">
+                function synapse_start() {
+                  document.getElementById('synapse_image').style.opacity = "1";
+                }
+
+                function synapse_stop() {
+                  document.getElementById('synapse_image').style.opacity = "0";
+                }
+                synapse_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2503.09674">
+                <papertitle>Parallel Universes for Temporal Evaluation and Knowledge Updating in LLMs</papertitle>
+              </a>
+              <br>
+              <strong>Jonathan Zheng</strong>,
+              <a href="https://scholar.google.com/citations?user=qRDcttYAAAAJ&hl=zh-CN/">Zirui Shao</a>,
+	      <a href="http://aritter.github.io/">Alan Ritter</a>,
+              <a href="https://cocoxu.github.io/">Wei Xu</a>
+	      <br>
+	      <em>NeurIPS 2026</em>
+	      <br>
+	      <a href="https://arxiv.org/abs/2609.00184">arXiv</a>
+              <p></p>
+              <p>
+                Knowledge updating is a challenging problem for LLMs whose pretrained knowledge becomes outdated over time. PARALLELEVENTS is a synthetic benchmark for evaluating knowledge insertion without data contamination, while SYNAPSE provides a scalable framework for integrating new knowledge using synthetic data generation.
+              </p>
+            </td>
+          </tr>	
+		
+		
+		<tr onmouseout="branch_stop()" onmouseover="branch_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='branch_image'>
@@ -118,7 +158,7 @@
                 function branch_stop() {
                   document.getElementById('branch_image').style.opacity = "0";
                 }
-                mira_stop()
+            	branch_stop()
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
@@ -155,7 +195,7 @@
                 function neobench_stop() {
                   document.getElementById('neobench_image').style.opacity = "0";
                 }
-                mira_stop()
+                neobench_stop()
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
@@ -194,7 +234,7 @@
                 function stanceosaurus2_stop() {
                   document.getElementById('stanceosaurus2_image').style.opacity = "0";
                 }
-                mira_stop()
+                stanceosaurus2_stop()
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
@@ -238,7 +278,7 @@
                 function stanceosaurus_stop() {
                   document.getElementById('stanceosaurus_image').style.opacity = "0";
                 }
-                mira_stop()
+                stanceosaurus_start()
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
